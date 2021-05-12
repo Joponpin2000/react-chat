@@ -61,13 +61,14 @@ const Chat = ({ location }) => {
         if (message) {
             socket.emit('sendMessage', message, () => setMessage(''));
         }
+
+        setMessage('');
     }
 
     return (
 
         <div className="app">
             <div className="app__body">
-
                 <div className="chat">
                     <div className="b">
                         <InfoBar room={room} seed={seed} />

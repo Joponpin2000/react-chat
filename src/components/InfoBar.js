@@ -1,4 +1,4 @@
-import { Avatar, Button, IconButton } from '@material-ui/core';
+import { Avatar, IconButton } from '@material-ui/core';
 import React from 'react';
 import { avatarUrl } from './shared';
 import Delete from '@material-ui/icons/Delete';
@@ -17,9 +17,7 @@ const InfoBar = ({ room, users, seed }) => {
 
             <div className="chat__headerRight">
                 <IconButton>
-                    <Button>
-                        <Delete />
-                    </Button>
+                    <Delete />
                 </IconButton>
 
             </div>
